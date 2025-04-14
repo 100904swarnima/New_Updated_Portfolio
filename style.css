@@ -1,0 +1,163 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  .bio {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    color: #111827;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .hobby-list {
+    text-align: left;
+    padding-left: 20px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  /* Social icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #0077b5; /* LinkedIn blue or dark mode accent */
+  }
+  
+  /* Resume Button */
+  .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-download:hover {
+    background-color: #374151;
+  }
+  
+  /* Dark Theme Support */
+  .dark-theme {
+    background-color: #111827;
+    color: #e5e7eb;
+  }
+  
+  .dark-theme .profile-card {
+    background-color: #1f2937;
+    color: #e5e7eb;
+  }
+  
+  .dark-theme .bio,
+  .dark-theme .hobby-list,
+  .dark-theme h1,
+  .dark-theme h2 {
+    color: #e5e7eb;
+  }
+  
+  .dark-theme .social-links a {
+    color: #e5e7eb;
+  }
+  
+  .dark-theme .social-links a:hover {
+    color: #60a5fa; /* Accent blue */
+  }
+  
+  .dark-theme .btn-download {
+    background-color: #3b82f6;
+  }
+  
+  .dark-theme .btn-download:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .profile-card {
+      padding: 30px 20px;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
